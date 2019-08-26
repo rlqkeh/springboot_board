@@ -1,12 +1,12 @@
 CREATE TABLE t_board(
-    board_idx INT(11) NOT NULL AUTO_INCREMENT COMMNET '글 번호'
-    ,title VARCHAR(300) NOT NULL COMMENT '제목'
-    ,contents TEXT NOT NULL COMMENT '내용'
-    ,hit-cnt SMALLINT(10) NOT NULL DEFAULT '0' COMMENT '조회수'
-    ,created_datetime DATETIME NOT NULL COMMENT '작성시간'
-    ,creator_id VARCHAR(50) NOT NULL COMMENT '작성자'
-    ,updated_datetime DATETIME DEFAULT NULL COMMENT '수정시간'
-    ,updater_id VARCHAR(50) DEFAULT NULL COMMENT '수정자'
-    ,deleted_yn CHAR(1) NOT NULL DEFAULT 'N' COMMENT '삭제 여부',
+    board_idx INT(11) NOT NULL AUTO_INCREMENT
+    ,title VARCHAR(300) NOT NULL
+    ,contents VARCHAR(5000) NOT NULL 
+    ,hit_cnt INT(10) NOT NULL DEFAULT '0' 
+    ,created_datetime DATETIME NOT NULL 
+    ,creator_id VARCHAR(50) NOT NULL
+    ,updated_datetime DATETIME DEFAULT NULL
+    ,updater_id VARCHAR(50) DEFAULT NULL 
+    ,deleted_yn CHAR(1) NOT NULL DEFAULT 'N' 
     ,PRIMARY KEY(board_idx)
 );
