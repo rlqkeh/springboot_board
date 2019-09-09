@@ -1,4 +1,4 @@
-package com.example.board.configuration;
+package com.example.comn.configuration;
 
 import javax.sql.DataSource;
 
@@ -64,5 +64,7 @@ public class DatabaseConfiguration {
 	public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory){
 		return new SqlSessionTemplate(sqlSessionFactory);
 	}
+	
+
 	
 }
